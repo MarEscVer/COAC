@@ -93,6 +93,14 @@ public abstract class AgrupacionOficial extends Agrupacion {
 		return added;
 	}
 	
+	/**
+	 * Eliminar un Integrante en el Array de Participantes de una Agrupación Oficial
+	 * @param i <i>Objeto Integrante</i>
+	 * @return <ul>
+	 * 				<li>true: se ha podido eliminar el integrante</li>
+	 * 				<li>false: no se ha podido eliminar el integrante</li>
+	 * 			</ul>
+	 */
 	public boolean eliminarIntegrante(Integrante i) {
 		boolean deleted = false;
 		for (int x = 0; x < participante.length; x++) {
