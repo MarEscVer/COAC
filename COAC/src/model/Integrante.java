@@ -49,7 +49,7 @@ public class Integrante {
 	@Override
 	public String toString() {
 		return "Integrante: Nombre: " + getNombre() + ", Edad: " + getEdad() + ", Localidad: "
-				+ getLocalidad() + "Número de Integrante: " + getNumeroParticipante();
+				+ getLocalidad();
 	}
 	
 }

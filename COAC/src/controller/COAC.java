@@ -11,7 +11,9 @@ import model.Cuarteto;
 import model.Integrante;
 import model.Romancero;
 import model.Sort_Autor;
+import model.Sort_Integrantes_Nombre;
 import model.Sort_Musica_Letra;
+import model.Sort_Nombre;
 import model.Sort_Puntos;
 
 public class COAC {
@@ -225,11 +227,11 @@ public class COAC {
 	
 	//Ordenar	
 	public void ordenar_por_nombre() {
-		Arrays.sort(agrupaciones);
+		Arrays.sort(agrupaciones, new Sort_Nombre());
 	}
 	
 	public void ordenarIntegrantes() {
-		Arrays.sort(integrantes);
+		Arrays.sort(integrantes, new Sort_Integrantes_Nombre());
 	}
 
 	public void ordenar_por_autor() {
