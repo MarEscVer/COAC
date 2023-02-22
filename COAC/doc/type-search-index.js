@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"model","l":"Agrupacion"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"model","l":"Sort_Puntos"}];updateSearchResults();
