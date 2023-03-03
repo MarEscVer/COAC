@@ -1,7 +1,12 @@
 package model;
 
+/**
+ * <h2>Clase Chirigota, se utiliza para crear Chirigotas para su posterior gestión</h2>
+ * @author maria
+ * @since 22-02-2022
+ */
 public class Comparsa extends AgrupacionOficial {
-
+ 
 	private String empresaAtrezo;
 
 	public Comparsa() {

@@ -89,7 +89,7 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 
 	/**
 	 * Método sobreescrito implementación de la interfaz Callejera
-	 * @return Chirigota siendo escuchada en la calle
+	 * @return Chirigota 
 	 */
 	@Override
 	public String amoAescucha() {
