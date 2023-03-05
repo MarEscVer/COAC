@@ -32,7 +32,7 @@ public class Cuarteto extends AgrupacionOficial implements Callejera{
 
 	/**
 	 * Establecer el valor del número de miembros de un Cuarteto
-	 * @param número de miembros <i>Número de miembros de un Cuarteto</i>
+	 * @param numMiembros <i>Número de miembros de un Cuarteto</i>
 	 */
 	public void setNumMiembros(Integer numMiembros) {
 		NumMiembros = numMiembros;

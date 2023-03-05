@@ -42,7 +42,7 @@ public class Integrante {
 
 	/**
 	 * Establecer el valor del número de integrantes
-	 * @param número de integrantes <i>Contador del número total de Integrantes creados</i>
+	 * @param numeroParticipante <i>Contador del número total de Integrantes creados</i>
 	 */
 	private void setNumeroParticipante(Integer numeroParticipante) {
 		Integrante.numeroParticipante = numeroParticipante;
