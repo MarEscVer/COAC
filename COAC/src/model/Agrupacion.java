@@ -132,25 +132,21 @@ public abstract class Agrupacion implements Comparable<Agrupacion>{
 
 	/**
 	 * Método abstracto cuya implementación se realizará en sus diversas clases hijas
-	 * @see <ul>
-	 * 			<li>Chirigota</li>
-	 * 			<li>Comparsa</li>
-	 * 			<li>Coro</li>
-	 * 			<li>Cuarteto</li>
-	 * 			<li>Romancero</li>
-	 * 		</ul>
+	 * @see Chirigota
+	 * @see Comparsa
+	 * @see Romancero
+	 * @see Cuarteto
+	 * @see Romancero
 	 */
 	public abstract String cantarPresentacion();
 	
 	/**
 	 * Método abstracto cuya implementación se realizará en sus diversas clases hijas
-	 * @see <ul>
-	 * 			<li>Chirigota</li>
-	 * 			<li>Comparsa</li>
-	 * 			<li>Coro</li>
-	 * 			<li>Cuarteto</li>
-	 * 			<li>Romancero</li>
-	 * 		</ul>
+	 * @see Chirigota
+	 * @see Comparsa
+	 * @see Romancero
+	 * @see Cuarteto
+	 * @see Romancero
 	 */
 	public abstract String hacerTipo();
 	

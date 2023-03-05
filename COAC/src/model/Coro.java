@@ -83,7 +83,7 @@ public class Coro extends AgrupacionOficial{
 	 * El Coro pasa a estar haciendo el Tipo
 	 * Se comprueba si tenemos el nombre y el Tipo(disfraz) del Coro en cuestión para establecer el mensaje concreto
 	 * @see Agrupacion
-	 * @return texto en el que se especifica que el Coro etá haciendo el Tipo
+	 * @return texto en el que se especifica que el Coro está haciendo el Tipo
 	 */
 	@Override
 	public String hacerTipo() {

@@ -131,12 +131,10 @@ public abstract class AgrupacionOficial extends Agrupacion {
 	
 	/**
 	 * Método abstracto cuya implementación se realizará en sus diversas clases hijas
-	 * @see <ul>
-	 * 			<li>Chirigota</li>
-	 * 			<li>Comparsa</li>
-	 * 			<li>Coro</li>
-	 * 			<li>Cuarteto</li>
-	 * 		</ul>
+	 * @see Chirigota
+	 * @see Comparsa
+	 * @see Romancero
+	 * @see Cuarteto
 	 */
 	public abstract String caminitoDelFalla();
 	

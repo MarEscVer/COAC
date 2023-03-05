@@ -39,7 +39,7 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 
 	/**
 	 * Método sobreescrito para la identificación de los valores de los diferentes atributos de una Chirigota
-	 * @return valores de una Chirigota
+	 * @return representación en texto de una Chirigota
 	 */
 	@Override
 	public String toString() {
@@ -47,8 +47,10 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 	}
 
 	/**
-	 * Método sobreescrito heredado de clase padre (AgrupacionOficial)
-	 * @return Presentación de la Chirigota
+	 * La Chirigota pasa a estar cantando la Presentación
+	 * Se comprueba si tenemos el nombre de la Chirigota en cuestión para establecer el mensaje concreto
+	 * @see Agrupacion
+	 * @return texto en el que se especifica que la Chirigota etá cantando la presentación
 	 */
 	@Override
 	public String cantarPresentacion() {
@@ -58,8 +60,10 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 	}
 	
 	/**
-	 * Método sobreescrito heredado de clase padre (AgrupacionOficial)
-	 * @return Hacer Tipo por parte de la Chirigota
+	 * La Chirigota pasa a estar haciendo el Tipo
+	 * Se comprueba si tenemos el nombre y el Tipo(disfraz) de la Chirigota en cuestión para establecer el mensaje concreto
+	 * @see Agrupacion
+	 * @return texto en el que se especifica que la Chirigota está haciendo el Tipo
 	 */
 	@Override
 	public String hacerTipo() {
@@ -73,8 +77,10 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 	}
 	
 	/**
-	 * Método sobreescrito heredado de clase padre (AgrupacionOficial)
-	 * @return la Chirigota se pone en camino del Falla
+	 * La Chirigota pasa a estar camino del Falla
+	 * Se comprueba si tenemos el nombre de la Chirigota en cuestión para establecer el mensaje concret
+	 * @see AgrupacionOficial
+	 * @return texto en el que se especifica que la Chirigota etá camino del Falla
 	 */
 	@Override
 	public String caminitoDelFalla() {
@@ -88,8 +94,10 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
 	}
 
 	/**
-	 * Método sobreescrito implementación de la interfaz Callejera
-	 * @return Chirigota 
+	 * La Chirigota pasa a estar en la calle
+	 * Se comprueba si tenemos el nombre de la Chirigota en cuestión para establecer el mensaje concreto
+	 * @see Callejera
+	 * @return texto en el que se especifica que la Chirigota está en la calle
 	 */
 	@Override
 	public String amoAescucha() {
