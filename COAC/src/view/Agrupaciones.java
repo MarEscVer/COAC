@@ -2,8 +2,16 @@ package view;
 
 import model.*;
 
+/**
+ * <h2>Clase Agrupaciones, creada para gestionar el menú de gestión de Agrupaciones para el usuario en la vista</h2>
+ * @author maria
+ * @since 06-03-2022
+ */
 public class Agrupaciones {
 	
+	/**
+	 * Mostrar el menú de los tipos de agrupaciones posibles en el proyecto
+	 */
 	private static void mostrarmenuTipoAgrupaciones() {
 		Util.escribirLn("\n");
 		Util.escribirLn("┌───────────────────────┐");
@@ -16,6 +24,12 @@ public class Agrupaciones {
 		Util.escribirLn("  5. Romancero.");
 	}
 
+	/**
+	 * Gestión para añadir una Agrupación
+	 * Muestra el menú de tipos de agrupaciones y se reraliza la lectura de la opción decidida por el usuario
+	 * Bucle que finaliza cuando el usuario introduce "0"
+	 * @see Principal
+	 */
 	static void addAgrupacion() {
 		int opc;
 		do {
@@ -32,6 +46,13 @@ public class Agrupaciones {
 		} while (opc != 0);
 	}
 	
+	/**
+	 * Gestión para eliminar una Agrupación
+	 * Muestra el listado de todas las Agrupaciones para que el usuario introduzca la posición de la que desea eliminar
+	 * Bucle que finaliza cuando el usuario introduce "0"
+	 * @see Principal
+	 * @see Listado
+	 */
 	static void delAgrupacion() {
 		int opc;
 		do {
@@ -42,6 +63,14 @@ public class Agrupaciones {
 		} while (opc != 0);
 	}
 	
+	/**
+	 * Gestión para editar una Agrupación
+	 * Muestra el listado de todas las Agrupaciones para que el usuario introduzca la posición de la que desea editar
+	 * Se muestra el usuario los diferentes atributos para que los edite (dependiendo del Objeto concreto)
+	 * Bucle que finaliza cuando el usuario introduce "0"
+	 * @see Principal
+	 * @see Listado
+	 */
 	static void editAgrupacion() {
 		int opc;
 		do {
@@ -63,6 +92,12 @@ public class Agrupaciones {
 		} while (opc != 0);
 	}
 	
+	/**
+	 * Gestión para añadir una Chirigota
+	 * Se muestra el usuario los diferentes atributos para que los rellene
+	 * @see Chirigota
+	 * @see Principal
+	 */
 	static void addChirigota() {
 		Chirigota ch = new Chirigota();
 		datosAgrupaciones(ch);
@@ -70,6 +105,12 @@ public class Agrupaciones {
 		Principal.coac.inscribir_agrupacion(ch);
 	}
 	
+	/**
+	 * Gestión para añadir un Coro
+	 * Se muestra el usuario los diferentes atributos para que los rellene
+	 * @see Coro
+	 * @see Principal
+	 */
 	static void addCoro() {
 		Coro c = new Coro();
 		datosAgrupaciones(c);
@@ -77,6 +118,12 @@ public class Agrupaciones {
 		Principal.coac.inscribir_agrupacion(c);
 	}
 	
+	/**
+	 * Gestión para añadir una Comparsa
+	 * Se muestra el usuario los diferentes atributos para que los rellene
+	 * @see Comparsa
+	 * @see Principal
+	 */
 	static void addComparsa() {
 		Comparsa com = new Comparsa();
 		datosAgrupaciones(com);
@@ -84,6 +131,12 @@ public class Agrupaciones {
 		Principal.coac.inscribir_agrupacion(com);
 	}
 	
+	/**
+	 * Gestión para añadir un Cuarteto
+	 * Se muestra el usuario los diferentes atributos para que los rellene
+	 * @see Cuarteto
+	 * @see Principal
+	 */
 	static void addcuarteto() {
 		Cuarteto cu = new Cuarteto();
 		datosAgrupaciones(cu);
@@ -91,6 +144,12 @@ public class Agrupaciones {
 		Principal.coac.inscribir_agrupacion(cu);
 	}
 	
+	/**
+	 * Gestión para añadir un Romancero
+	 * Se muestra el usuario los diferentes atributos para que los rellene
+	 * @see Romancero
+	 * @see Principal
+	 */
 	static void addRomancero() {
 		Romancero r = new Romancero();
 		datosAgrupaciones(r);
@@ -98,6 +157,15 @@ public class Agrupaciones {
 		Principal.coac.inscribir_agrupacion(r);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Agrupacion
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Agrupacion
+	 * @see Util
+	 */
 	private static void datosAgrupaciones(Agrupacion a) {
 		String pregunta;
 		String respuesta;
@@ -124,6 +192,15 @@ public class Agrupaciones {
 
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Agrupacion Oficial
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see AgrupacionOficial
+	 * @see Util
+	 */
 	static void datoOficial(AgrupacionOficial a) {
 		String pregunta;
 		int respuesta;
@@ -133,6 +210,15 @@ public class Agrupaciones {
 		if(respuesta != 0) a.setNumeropart(respuesta);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Chirigota
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Chirigota
+	 * @see Util
+	 */
 	private static void datochirigota(Chirigota a) {
 		String pregunta;
 		int respuesta;
@@ -142,6 +228,15 @@ public class Agrupaciones {
 		if(respuesta > 0) a.setNumCuples(respuesta);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Coro
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Coro
+	 * @see Util
+	 */
 	private static void datocoro(Coro a) {
 		String pregunta;
 		int respuesta;
@@ -155,6 +250,15 @@ public class Agrupaciones {
 		if(respuesta > 0) a.setGuitarras(respuesta);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Comparsa
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Comparsa
+	 * @see Util
+	 */
 	private static void datocomparsa(Comparsa a) {
 		String pregunta;
 		String respuesta;
@@ -164,6 +268,15 @@ public class Agrupaciones {
 		if(respuesta.length()>0) a.setEmpresaAtrezo(respuesta);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Cuarteto
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Cuarteto
+	 * @see Util
+	 */
 	private static void datocuarteto(Cuarteto a) {
 		String pregunta;
 		int respuesta;
@@ -173,6 +286,15 @@ public class Agrupaciones {
 		if(respuesta > 0) a.setNumMiembros(respuesta);
 	}
 	
+	/**
+	 * Gestión para inicializar o editar los atributos de un Objeto Romancero
+	 * Se muestra el usuario los diferentes atributos: <ul>
+	 * 		<li>Si pulsa enter dejar el valor ya existente en ese atributo</li>
+	 * 	 	<li>Si escribe un valor, actualizar el valor en ese atributo</li>
+	 * </ul>
+	 * @see Romancero
+	 * @see Util
+	 */
 	private static void datoromancero(Romancero a) {
 		String pregunta;
 		String respuesta;
