@@ -39,7 +39,7 @@ public class COAC {
 
 	/**
 	 * Constructor por defecto, sin parámetros
-	 * Crea el objeto COAC llamando constructor con un parametro e indicando como tamañoÇ
+	 * Crea el objeto COAC llamando constructor con un parametro e indicando como tamaño
 	 * del array agrupaciones con el número por defecto <i>AGRUPACIONESDEFECTO</i>
 	 */
 	public COAC() {
