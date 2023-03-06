@@ -4,17 +4,27 @@ import java.util.Scanner;
 
 public class Util {
 
-//Metodo para escribir (sin salto de linea)
+/**
+ * Escribir por pantalla
+ * @param mensaje <i>Texto introducido</i>
+ */
 	public static void escribir(String mensaje) {
 		System.out.print(mensaje);
 		}
 		
-//Metodo para escribir (con salto linea)
+	/**
+	 * Escribir por pantalla con salto de linea
+	 * @param mensaje <i>Texto introducido</i>
+	 */
 	public static void escribirLn(String mensaje) {
 		System.out.println(mensaje);
 		}
 
-// Metodo para leer un int
+	/**
+	 * Leer un int transfromando el texto introducido por el usuario en tipo int
+	 * @param pregunta <i>Pregunta a realizar al usuario</i>
+	 * @return respuesta del usuario
+	 */
 	public static int leerInt(String pregunta) {
 		Scanner teclado = new Scanner(System.in);
 		int respuesta;
@@ -23,7 +33,11 @@ public class Util {
 		return respuesta;
 		}
 		
-// Metodo para leer un double
+	/**
+	 * Leer un double transfromando el texto introducido por el usuario en tipo double
+	 * @param pregunta <i>Pregunta a realizar al usuario</i>
+	 * @return respuesta del usuario
+	 */
 	public static double leerDouble(String pregunta) {
 		Scanner teclado = new Scanner(System.in);
 		double respuesta;
@@ -32,7 +46,11 @@ public class Util {
 		return respuesta;
 		}
 		
-//Metodo para leer un String
+	/**
+	 * Leer un string transfromando el texto introducido por el usuario en tipo string
+	 * @param pregunta <i>Pregunta a realizar al usuario</i>
+	 * @return respuesta del usuario
+	 */
 	public static String leerString(String pregunta) {
 		Scanner teclado = new Scanner(System.in);
 		String respuesta;
@@ -41,7 +59,11 @@ public class Util {
 		return respuesta;
 		}
 
-//Metodo para leer un Char
+	/**
+	 * Leer un char transfromando el texto introducido por el usuario en tipo char
+	 * @param pregunta <i>Pregunta a realizar al usuario</i>
+	 * @return respuesta del usuario
+	 */
 	public static char leerChar(String pregunta) {
 		Scanner teclado = new Scanner(System.in);
 		char respuesta;
@@ -50,7 +72,11 @@ public class Util {
 		return respuesta;
 		}
 		
-// Método para subrayar
+	/**
+	 * Subrayar un texto al mostrarlo por pantalla
+	 * @param texto <i>Texto a subrayar</i>
+	 * @param carcater <i>Carcater con el cual se subrayará el texto</i>
+	 */
 	public static void subrayar (String texto, String caracter) {
 		System.out.println(texto);
 		for (int i = 1; i <= texto.length(); i++) {
@@ -59,7 +85,11 @@ public class Util {
 		System.out.println();
 	}
 	
-// Método crear números aleatorios
+	/**
+	 * Generar un número aleatorio hasta un número tope
+	 * @param n1 <i>Numero tope para generar aleatorio</i>
+	 * @return número aleatorio
+	 */
 	public static int aleatorio(int n1) {
 		int aleatorio = (int)(Math.random()*n1 + 1);
 		return aleatorio;
