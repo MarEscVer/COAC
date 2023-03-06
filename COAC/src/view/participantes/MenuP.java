@@ -2,7 +2,16 @@ package view.participantes;
 
 import view.Util;
 
+/**
+ * <h2>Clase Menu de los Participantes</h2>
+ * @author maria
+ * @since 06-03-2022
+ */
 public class MenuP {
+	
+	/**
+	 * Mostrar el menú de la Gestión de los Participantes
+	 */
 	static void mostrarMenuParticipantes() {
 		Util.escribirLn("\n");
 		Util.escribirLn("┌──────────────────────────┐");
@@ -15,6 +24,12 @@ public class MenuP {
 		Util.escribirLn("  5. Ordenar por nombre.");
 	}
 	
+	/**
+	 * Gestión del Menu de los Participantes
+	 * Muestra del menú y lectura de la opción decidida por el usuario
+	 * Bucle que finaliza cuando el usuario introduce "0"
+	 * @see OpcionP
+	 */
 	public static void opcParticipantes() {
 		int opc;
 		do {

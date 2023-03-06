@@ -3,8 +3,16 @@ package view.concurso;
 import view.Listado;
 import view.Util;
 
+/**
+ * <h2>Clase Menu del Concurso de Agrupaciones</h2>
+ * @author maria
+ * @since 06-03-2022
+ */
 public class MenuC {
 	
+	/**
+	 * Mostrar el menú de la Gestión del Concurso
+	 */
 	static void mostrarMenuConcurso() {
 		Util.escribirLn("\n");
 		Util.escribirLn("┌──────────────────────┐");
@@ -28,6 +36,13 @@ public class MenuC {
 		Util.escribirLn(" 13. Ordenar por autor de música/letra.");
 	}
 	
+	/**
+	 * Gestión del Menu del Concurso
+	 * Muestra del menú y lectura de la opción decidida por el usuario
+	 * Bucle que finaliza cuando el usuario introduce "0"
+	 * @see OpcionC
+	 * @see Listado
+	 */
 	public static void opcConcurso() {
 		int opc;
 		do {
