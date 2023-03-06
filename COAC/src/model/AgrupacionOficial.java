@@ -64,6 +64,7 @@ public abstract class AgrupacionOficial extends Agrupacion {
 
 	/**
 	 * Insertar un Integrante en el Array de Participantes de una Agrupación Oficial
+	 * Comprueba que el integrante no exista en el array y, si es así, lo añade
 	 * @param i <i>Objeto Integrante</i>
 	 * @return <ul>
 	 * 				<li>true: se ha podido añadir el integrante</li>
@@ -95,6 +96,7 @@ public abstract class AgrupacionOficial extends Agrupacion {
 	
 	/**
 	 * Eliminar un Integrante en el Array de Participantes de una Agrupación Oficial
+	 * Comprueba que el integrante exista en el array y, si es así, lo elimina
 	 * @param i <i>Objeto Integrante</i>
 	 * @return <ul>
 	 * 				<li>true: se ha podido eliminar el integrante</li>
