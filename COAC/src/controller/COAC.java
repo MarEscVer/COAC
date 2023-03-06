@@ -23,6 +23,9 @@ import model.Sort_Puntos;
  */
 public class COAC {
 
+	/**
+	 * Constante que indica el número máximo de agrupaciones por defecto de un objeto COAC
+	 */
 	private static final int AGRUPACIONESDEFECTO = 10;
 	/**
 	 * Constante que indica el número máximo de integrantes por defecto de un objeto COAC
@@ -50,6 +53,7 @@ public class COAC {
 	 * Constructor con un parámetro
 	 * Crea el objeto COAC especificando el tamaño máximo de agrupaciones a guardar en el array <i>agrupaciones</i>
 	 * Inicializa el array de integrantes con el número por defecto <i>INTEGRANTESDEFECTO</i>
+	 * @param tamaño <i>Tamaño para inicializar el Array de Agrupaciones</i>
 	 */
 	public COAC(int tamaño) {
 		agrupaciones = new Agrupacion[tamaño];
@@ -147,7 +151,7 @@ public class COAC {
 	 * Inscripbir un Integrante en el Array de Integrantes del Concurso
 	 * Comprueba que el integrante no exista en el array y, si es así, lo añade
 	 * @see Integrante
-	 * @param i <i>Objeto Integrante</i>
+	 * @param a <i>Objeto Integrante</i>
 	 * @return <ul>
 	 * 				<li>true: se ha podido añadir el integrante</li>
 	 * 				<li>false: no se ha podido añadir el integrante</li>
@@ -179,7 +183,7 @@ public class COAC {
 	/**
 	 * Eliminar un Integrante en el Array de Integrantes del Concurso
 	 * Comprueba que el integrante exista en el array y, si es así, lo elimina
-	 * @param i <i>Objeto Integrante</i>
+	 * @param a <i>Objeto Integrante</i>
 	 * @see Integrante
 	 * @return <ul>
 	 * 				<li>true: se ha podido eliminar el integrante</li>
@@ -230,7 +234,7 @@ public class COAC {
 	 * Primero contamos el número de Chirigotas que contiene el COAC
 	 * Segundo inicializamos un nuevo Array que contendrá las Chirigotas
 	 * Tercero añadimos al nuevo array todas las Chirigotas que contiene el COAC
-	 * @see Chirigotas
+	 * @see Chirigota
 	 * @param agrupaciones <i>Array de Objetos Agrupaciones</i>
 	 * @return Array de Chirigotas
 	 */

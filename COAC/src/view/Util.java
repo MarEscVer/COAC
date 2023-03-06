@@ -2,6 +2,11 @@ package view;
 
 import java.util.Scanner;
 
+/**
+ * <h2>Clase Util, métodos básicos para mostrar por pantalla o leer datos por la consola</h2>
+ * @author maria
+ * @since 06-03-2022
+ */
 public class Util {
 
 /**
@@ -75,7 +80,7 @@ public class Util {
 	/**
 	 * Subrayar un texto al mostrarlo por pantalla
 	 * @param texto <i>Texto a subrayar</i>
-	 * @param carcater <i>Carcater con el cual se subrayará el texto</i>
+	 * @param caracter <i>Carácter con el cual se subrayará el texto</i>
 	 */
 	public static void subrayar (String texto, String caracter) {
 		System.out.println(texto);

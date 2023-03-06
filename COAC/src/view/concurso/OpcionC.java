@@ -135,6 +135,7 @@ public class OpcionC {
 	 * </ul>
 	 * @see AgrupacionOficial
 	 * @see Util
+	 * @param a <i>Agrupación para inicializar o editar atributos</i>
 	 */
 	static void datoOficial(AgrupacionOficial a) {
 		String pregunta;

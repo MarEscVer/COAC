@@ -165,6 +165,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Agrupacion
 	 * @see Util
+	 * @param a <i>Agrupacion</i>
 	 */
 	private static void datosAgrupaciones(Agrupacion a) {
 		String pregunta;
@@ -200,6 +201,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see AgrupacionOficial
 	 * @see Util
+	 * @param a <i>AgrupacionOficial</i>
 	 */
 	static void datoOficial(AgrupacionOficial a) {
 		String pregunta;
@@ -218,6 +220,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Chirigota
 	 * @see Util
+	 * @param a <i>Chirigota</i>
 	 */
 	private static void datochirigota(Chirigota a) {
 		String pregunta;
@@ -236,6 +239,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Coro
 	 * @see Util
+	 * @param a <i>Coro</i>
 	 */
 	private static void datocoro(Coro a) {
 		String pregunta;
@@ -258,6 +262,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Comparsa
 	 * @see Util
+	 * @param a <i>Comparsa</i>
 	 */
 	private static void datocomparsa(Comparsa a) {
 		String pregunta;
@@ -276,6 +281,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Cuarteto
 	 * @see Util
+	 * @param a <i>Cuarteto</i>
 	 */
 	private static void datocuarteto(Cuarteto a) {
 		String pregunta;
@@ -294,6 +300,7 @@ public class Agrupaciones {
 	 * </ul>
 	 * @see Romancero
 	 * @see Util
+	 * @param a <i>Romancero</i>
 	 */
 	private static void datoromancero(Romancero a) {
 		String pregunta;

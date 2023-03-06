@@ -73,6 +73,7 @@ public class OpcionP {
 	 * </ul>
 	 * @see Integrante
 	 * @see Util
+	 * @param a <i>Integrante a incializar/editar atributos</i>
 	 */
 	public static void datosIntegrantes(Integrante a) {
 		String pregunta;
