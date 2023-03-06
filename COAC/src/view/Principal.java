@@ -27,14 +27,20 @@ public class Principal {
 	 */
 	public static COAC coac = new COAC(TOTAL);
 
-	
+	/**
+	 * Creación de Objetos e inicizialización de atributos para realizar pruebas en el proyecto
+	 * Inscripción de dichos objetos en el COAC
+	 * Llamada al método para la gestión de la vista del Prograna
+	 * @see Chirigota
+	 * @see Comparsa
+	 * @see Coro
+	 * @see Cuarteto
+	 * @see Romancero
+	 * @see Integrante
+	 */
 	public static void main(String[] args) {
 
-		/**
-		 * Creación de Objeto Chirigota e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Chirigota
-		 */
+		
 		Chirigota o1 = new Chirigota();
 		o1.setNombre("Este año venimos con Esperanza");
 		o1.setAutor_letra("Moisés y José Antonio");
@@ -42,11 +48,6 @@ public class Principal {
 		o1.setAutor("José Antonio");
 		coac.inscribir_agrupacion(o1);
 		
-		/**
-		 * Creación de Objeto Comparsa e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Comparsa
-		 */
 		Comparsa o3 = new Comparsa();
 		o3.setNombre("El Andalú");
 		o3.setAutor_letra("José Manuel");
@@ -54,11 +55,6 @@ public class Principal {
 		o3.setAutor("Ramón");
 		coac.inscribir_agrupacion(o3);
 		
-		/**
-		 * Creación de Objeto Coro e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Coro
-		 */
 		Coro o5 = new Coro();
 		o5.setNombre("La Voz");
 		o5.setAutor_letra("Luis Manuel y Juan Manuel");
@@ -66,11 +62,6 @@ public class Principal {
 		o5.setAutor("Laura Rivero");
 		coac.inscribir_agrupacion(o5);
 		
-		/**
-		 * Creación de Objeto Cuarteto e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Cuarteto
-		 */
 		Cuarteto o7 = new Cuarteto();
 		o7.setNombre("Los Vigilantes de la Laja");
 		o7.setAutor_letra("Manuel y Francisco Joshua");
@@ -78,11 +69,6 @@ public class Principal {
 		o7.setAutor("LuManuelcia");
 		coac.inscribir_agrupacion(o7);
 		
-		/**
-		 * Creación de Objeto Romancero e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Romancero
-		 */
 		Romancero o9 = new Romancero();
 		o9.setNombre("Dia a dia");
 		o9.setAutor_letra("Tomás");
@@ -90,31 +76,18 @@ public class Principal {
 		o9.setAutor("Manolo");
 		coac.inscribir_agrupacion(o9);
 		
-		/**
-		 * Creación de Objeto Integrante e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Integrante
-		 */
 		Integrante i1 = new Integrante();
 		i1.setEdad(50);
 		i1.setLocalidad("Cadiz");
 		i1.setNombre("Juan");
 		coac.inscribir_participante(i1);
 		
-		/**
-		 * Creación de Objeto Integrante e inicizialización de atributos para realizar pruebas en el proyecto
-		 * Inscripción de la misma en el COAC
-		 * @see Integrante
-		 */
 		Integrante i2 = new Integrante();
 		i2.setEdad(30);
 		i2.setLocalidad("Cadiz");
 		i2.setNombre("Pepe");
 		coac.inscribir_participante(i2);
 		
-		/**
-		 * Llamada al método de gestión de los menús de vista
-		 */
 		gestionPrograma();
 	}
 
